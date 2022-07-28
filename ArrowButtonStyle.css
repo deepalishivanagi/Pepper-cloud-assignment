@@ -1,0 +1,130 @@
+
+.breadcrumb {
+	display: inline-block;
+    box-shadow: 0 0 15px 1px rgb(0 0 0 / 35%);
+    overflow: hidden;
+    border-radius: 0px;
+    counter-reset: flag;
+    text-align: center;
+    width: 98%;
+    margin: 1rem;
+    background-color: white;
+	
+}
+.breadcrumb a span {
+padding: 0rem;
+    background: white;
+    content: counter(flag);
+    counter-increment: flag;
+    border-radius: 100%;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1rem;
+    margin: 0.5rem 0;
+    position: absolute;
+    top: 0;
+    left: 78%;
+    border: 1px solid grey;
+    font-weight: bold;
+}
+.breadcrumb a span i{
+    font-size: 1.3rem;
+    color: green;
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white;
+	/*need more margin on the left of links to accomodate the numbers*/
+	padding: 0 10px 0 60px;
+	background: #666;
+	background: linear-gradient(#666, #333);
+	position: relative;
+    width: 20%;
+    border: 1px solid grey;
+    padding-left: 0%;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb a:first-child {
+	/* padding-left: 46px; */
+	border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+.breadcrumb a:first-child:before {
+	left: 14px;
+}
+.breadcrumb a:last-child {
+	border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+	padding-right: 20px;
+}
+
+/*hover/active styles*/
+.breadcrumb a.active, .breadcrumb a:hover{
+	background: #333;
+	background: linear-gradient(#333, #000);
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+	background: #333;
+	background: linear-gradient(135deg, #333, #000);
+}
+
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb a:after {
+	content: '';
+	position: absolute;
+    border-radius: 100%;
+	top: 0; 
+	right: -18px; /*half of square's length*/
+	/*same dimension as the line-height of .breadcrumb a */
+	width: 36px; 
+	height: 36px;
+
+	transform: scale(0.707) rotate(45deg);
+	/*we need to prevent the arrows from getting buried under the next link*/
+	z-index: 1;
+	/*background same as links but the gradient will be rotated to compensate with the transform applied*/
+	background: #666;
+	background: linear-gradient(135deg, #666, #333);
+	/*stylish arrow design using box shadow*/
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+	/*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+	border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb a:last-child:after {
+	content: none;
+}
+
+
+.flat a, .flat a:after {
+	background: white;
+	color: black;
+	transition: all 0.5s;
+}
+.flat a:before {
+	background: white;
+	box-shadow: 0 0 0 1px #ccc;
+}
+.flat a:hover, .flat a.active, 
+.flat a:hover:after, .flat a.active:after{
+	background: green;
+    color: white;
+}
+.flat a:hover, .flat a.next-to-active, 
+.flat a:hover:after, .flat a.next-to-active:after{
+	background: #e69e34;
+}
+
+
+
+
+
+

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/ArrowButtonStyle.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Design-mockup-Assignment</title>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="breadcrumb flat">
+                <a href="#" class="active">Status 1<span><i class="fa-regular fa-circle-check"></i></span></a>
+                <a href="#" class="next-to-active">New<span></span></a>
+                <a href="#">Working<span></span></a>
+                <a href="#">Nurturing<span></span></a>
+                <a href="#">Converted<span></span></a>
+            </div>            
+        </header>
+        <div>
+            <div class="nav-btns">
+                <button id="btn1">ACTIVITY</button>
+                <button id="btn2">INFORMATION</button>
+            </div>
+            
+            <hr>
+            <div class="Inside-activity-container">
+                <div class="left-container">    
+                    <!-- Activity list starts here -->
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log Calls</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Event</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Make Note</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Add Attachment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Activity Set</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Custom Field</a>
+                        </li>
+                      
+                    </ul>
+                    <!-- Activity list ends here -->
+                    <hr>
+                    <div class="New-Task">
+                        <b id="newTask-head">New Task</b>
+                    
+                        <div class="newTask-container">
+                            <!-- New task left section starts here -->
+                            <div class="newTask-left">
+                                
+                                <div>
+                                    <span>Task Type<span class="mandatory-sign">*</span></span>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                        <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div role="separator" class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><span>Assigned to<span class="mandatory-sign">*</span></span>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                        <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div role="separator" class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Date-flex-container">
+                                    <div class="Date-item-flex">
+                                        <div class="start-end-btn">
+                                            <p>Start Date</p>
+                                            <div class="input-group mb-3">
+                                                <input type="date" class="form-control" placeholder=" " aria-label=" " aria-describedby="button-addon2">
+                                            </div>
+                                        </div>
+                                        <div class="start-end-btn">
+                                            <p>End Date</p>
+                                            <div class="input-group mb-3">    
+                                                <input type="date" class="form-control" placeholder=" " aria-label=" " aria-describedby="button-addon2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Remind On</p>
+                                        <div class="input-group mb-3">
+                                            <input type="date" class="form-control" placeholder=" " aria-label=" " aria-describedby="button-addon2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                             <!-- New task left section ends here-->
+                            <!-- New tAsk right section starts here -->
+                            <div class="newTask-right">
+                                <span>Subject</span>
+                                <div id="Subject-div" class="input-group mb-3">    
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                                <span>Details</span>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                                </div>
+                                <div class="btn-container">
+                                    <button type="button" id="cancel-btn" class="btn btn-outline-secondary">Cancel</button>
+                                    <button type="button" id="apply-btn" class="btn btn-outline-warning">Apply</button>
+                                </div>
+                            </div>
+                            <!-- New tAsk right section ends here -->
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Task list table starts here -->
+                    <b id="tasklist">TaskList</b>
+                    <table id="tasklist-table" class="table table-striped">
+                        <thead >
+                          <tr id="tasklist-head">
+                            <th scope="col">#</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Assigned to</th>
+                            <th scope="col">Due Date</th>
+                            <th scope="col">Status<button class="btn btn-outline-secondary dropdown-toggle border-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td class="color-blue">Sample</td>
+                            <td>To Do</td>
+                            <td>Ravi Kumar</td>
+                            <td>13 Nov 2018</td>
+                            <td>Not Started</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td class="color-blue">Sample</td>
+                            <td>To Do</td>
+                            <td>Anand Pai</td>
+                            <td>16 Nov 2018</td>
+                            <td>Not Started</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td class="color-blue">Sample</td>
+                            <td>To Do</td>
+                            <td>Jayaram Ramesh</td>
+                            <td>12 Dec 2018</td>
+                            <td>Not Started</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td class="color-blue">Sample</td>
+                            <td>To Do</td>
+                            <td>Allan Gamez</td>
+                            <td>20 Dec 2018</td>
+                            <td>Not Started</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td id="View-more">View More<button class="btn btn-outline-secondary dropdown-toggle border-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                       <!-- Task list table ends here -->
+                </div>
+                 <!-- Left section ends here -->
+                <!-- Right section start here -->
+                <div class="right-container">
+                    <div class="filter-by-date">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Filter by date" aria-label="Text input with dropdown button">
+                            <div class="input-group-append">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product list starts here -->
+                    <div class="products-flex">
+                        <!-- 1st product div -->
+                    <div class="product-feature">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="feature-detail">
+                            <p><b>Informed Product features</b></p>
+                            <p>You contacted with <span class="highlight">Charles Gomez</span></p>
+                            <p><small>13 Nov 2018.  05:49 AM</small></p>
+                            <div id="feature-dropdown" class="input-group-append">
+                                <button  class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd product div -->
+                    <div class="product-feature">
+                        <div class="feature-icon">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                        <div class="feature-detail">
+                            <p><b>Send Product Brochure</b></p>
+                            <p>You added a To DO task with <span class="highlight">Arun Var..</span></p>
+                            <p><small>10 Nov 2018.  06:49 AM</small></p>
+                            <div id="feature-dropdown" class="input-group-append">
+                                <button  class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd product div -->
+                    <div class="product-feature">
+                        <div class="feature-icon">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <div class="feature-detail">
+                            <p><b>Send Product Brochure</b></p>
+                            <p>You added a To DO task with <span class="highlight">Arun Var..</span></p>
+                            <p><small>10 Nov 2018.  06:49 PM</small></p>
+                            <div id="feature-dropdown" class="input-group-append">
+                                <button  class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 4th product div -->
+                    <div class="product-feature">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="feature-detail">
+                            <p><b>Informed Product features</b></p>
+                            <p>You contacted with <span class="highlight">Charles Gomez</span></p>
+                            <p><small>13 Nov 2018.  05:49 AM</small></p>
+                            <div id="feature-dropdown" class="input-group-append">
+                                <button  class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5th product div -->
+                    <div class="product-feature">
+                        <div class="feature-icon">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                        <div class="feature-detail">
+                            <p><b>Send Product Brochure</b></p>
+                            <p>You added a To DO task with <span class="highlight">Arun Var..</span></p>
+                            <p><small>10 Nov 2018.  06:49 PM</small></p>
+                            <div id="feature-dropdown" class="input-group-append">
+                                <button  class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript"></script>
+    <script src="/script.js"></script>
+
+</body>
+</html>

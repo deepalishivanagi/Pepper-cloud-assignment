@@ -1,0 +1,219 @@
+body{
+    background-color: lightgrey;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.nav-btns{
+    margin-left: 1rem;
+}
+.nav-btns #btn1{
+    border: none;
+    background: transparent;
+    color: orange;
+    text-decoration: underline;
+    text-underline-offset: 23px;
+}
+.nav-btns #btn2{
+    border: none;
+    background: transparent;
+    color: grey;
+}
+.nav-link {
+    color: grey;
+}
+.nav .nav-link.active{
+    background-color: #e69e34;
+    border-bottom: 2px solid orangered;
+}
+.Inside-activity-container {
+    display: flex;
+}
+
+.left-container {
+    width: 70%;
+    height: 100%;
+    border: 1px solid grey;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+}
+
+.right-container {
+    width: 30%;
+    height: 100%;
+    border:1px solid grey;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    color: grey;
+}
+#newTask-head{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: grey;
+}
+.newTask-container{
+    display: flex;
+    width: 100%;
+    color: grey;
+}
+.newTask-right{
+    padding: 1rem;
+    width: 50%;
+   
+}
+.mandatory-sign{
+    color: red;
+}
+#Subject-div{
+    margin-bottom: 1rem;
+    
+}
+.Date-flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.Date-item-flex{
+    display: flex;
+    width: 100%;
+}
+.start-end-btn{
+    margin: 0.5rem;
+    width: 47%;
+}
+#tasklist-table{
+    border: 0.5px solid grey;
+    margin-top: 1rem;
+    color: grey;
+}
+#tasklist{
+    color: grey;
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(0,0,0,.05);
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,0);
+}
+.border-none{
+    border: none;
+}
+.color-blue{
+    color: blue;
+}
+#tasklist-head {
+    border: 0.5px solid grey;
+    color: grey;
+}
+#View-more {
+    color: orange;
+}
+.newTask-left{
+    padding: 1rem;
+    width: 50%;
+}
+.newTask-left .input-group{
+    margin-bottom: 1rem;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+}
+#apply-btn{
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    width: 50%;
+}
+#cancel-btn{
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+    width: 50%;
+}
+#Details-textarea {
+    height: 12rem;
+    width: 100%;
+    border: 1px solid #ced4da;
+}
+
+/* right section starts hear */
+.products-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.product-feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ced4da;
+    margin: 1rem;
+    width: 100%;
+   
+    font-size: initial;
+}
+
+.feature-icon {
+    padding: 1rem;
+    font-size: 130%;
+}
+.feature-detail{
+    padding: 1rem;
+    text-align:start;
+}
+#feature-dropdown{
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    margin-top: -1rem;
+    
+}
+.dropdown-toggle{
+    color: grey;
+}
+.highlight{
+    color: orange;
+}
+
+/* icon color changes */
+.fa-solid, .fas {
+   
+    color: dodgerblue;
+}
+.fa-circle-check {
+    
+    color: mediumseagreen;
+}
+.fa-file-lines {
+  
+    color: indianred;
+}
+
+@media only screen and (max-width: 900px){
+    .Inside-activity-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-container {
+        width: 90%;
+    }
+    .left-container {
+        width: 90%;
+    }
+}
+@media only screen and (max-width:580px)
+{
+    .newTask-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .newTask-left {
+        width: 80%;
+    }
+    .newTask-right {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    #tasklist-table{
+        font-size: xx-small;
+    }
+}
